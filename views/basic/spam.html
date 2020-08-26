@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Question Name</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: D</h1>
+      <p>
+        There is a bit of a judgement call here, as spam-bots can be treated
+        with the heaviest of ban hammers. However, we do not want to overreact
+        to an actual user making an honest mistake, so when in doubt a
+        suspension will suffice.
+      </p>
+      <p>
+        Remember that spam is considered to be any off-topic link, or links to
+        social media or blog posts. In general, links to GitHub and to personal
+        projects are acceptable.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Handling Spam</h1>
+      <p>
+        A new user has joined the server, and after introducing themselves they
+        post a link to their twitter account. How should you address this?
+      </p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Welcome the user to the server, check out their Twitter account, and
+        maybe follow them.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Silently remove the message containing the link.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Ban the user for spam.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Suspend the user for spam.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="./profanity.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>

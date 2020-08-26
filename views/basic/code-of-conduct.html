@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Code of Conduct</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: B</h1>
+      <p>
+        Having the link saved as a bookmark will be the quickest and most
+        convenient way for you to access the Code of Conduct. This will allow
+        you to pull it up and confirm the user's actions are a violation of our
+        rules.
+      </p>
+      <p>
+        In case you do not have it, the link is:
+        https://code-of-conduct.freecodecamp.org
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>The freeCodeCamp Code of Conduct</h1>
+      <p>
+        The freeCodeCamp Code of Conduct is the universal rule set for the
+        expected behaviour of our users. Knowing and understanding the Code of
+        Conduct is essential as a moderator, as you are expected to address
+        violations as they occur.
+      </p>
+      <p>What is the best way to find the Code of Conduct?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Do a Google Search for the "freeCodeCamp Code of Conduct"
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Save a bookmark of the link on your browser.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Ask another moderator to provide it for you.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Find the link in the freeCodeCamp GitHub repository.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="./spam.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Ban-Hammer!</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: C</h1>
+      <p>
+        A user who willingly disrespects our team immediately after being
+        suspended clearly has no desire to follow our Code of Conduct. This type
+        of behaviour generally warrants a ban.
+      </p>
+      <p>
+        However, it is important that we remain transparent in our actions.
+        Rather than silently banning them, it is best to send a response first.
+        As an example:
+      </p>
+      <p>
+        "If this is the way you think the issue should be resolved, you leave me
+        no choice but to wish you good luck on your journey. I sincerely hope
+        your attitude will improve over time and that we may welcome you here
+        again one day."
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>When to Ban a User</h1>
+      <p>
+        You have had to suspend a user for insulting another user. You send them
+        the Code of Conduct and ask that they read and accept it. The following
+        conversation results from this.
+      </p>
+      <textarea readonly rows="2">
+        You: Please confirm that you have read and agree to follow the CoC.
+        User: Sod off. I don't give a damn what you have to say.</textarea
+      >
+      <p>How should you proceed?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Ignore the user's comment and leave them suspended.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Ignore the user's comment and ban them from the server.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Respond to the user, and ban them from the server.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Respond to the user, and leave them suspended.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="../../index.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
