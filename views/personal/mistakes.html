@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Mistakes</title>
+  </head>
+  <body onload="formatChat()">
+    <div id="answer-modal">
+      <h1>The answer is: D</h1>
+      <p>
+        We are all human, and we all make mistakes. However, our moderators
+        should be able to own their mistakes and handle such situations with
+        dignity and grace. If you make an error that negatively impacts a user,
+        it is <em>very</em> important that you correct the error immediately.
+        You should also apologise directly to the user, let them know that they
+        have done nothing wrong and are not in any trouble, and ensure that
+        there is no record to suggest the user was disciplined when they were
+        not.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Owning your Mistakes</h1>
+      <p>
+        A user has dropped a spam link in the server, and you have decided to
+        suspend them. One of the features of the chatroom bot is the ability to
+        handle the suspension workflow, so you leverage that feature to suspend
+        the user. Unfortunately, you mistype the username and accidentally
+        suspend a different user, who was completely innocent.
+      </p>
+      <p>What is the best way to rectify this situation?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Ban them so they cannot tell anyone you made an error.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Leave the suspension in place. They probably won't notice anyway.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Immediately remove the suspension and say nothing about your mistake.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Immediately remove the suspension, then message the user to apologise
+        for the error.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="../../congrats.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
