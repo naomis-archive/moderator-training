@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Illegal Content</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: C</h1>
+      <p>
+        This type of violation is severe enough to warrant an immediate ban -
+        remember to send the user the Code of Conduct prior to issuing the ban,
+        however.
+      </p>
+      <p>
+        Additionally, you <em>never</em> want to save a screenshot of something
+        like this. Even if it is solely for evidence purposes, having the
+        content on your machine can land you in some serious trouble. Instead,
+        copy the message link from Discord before you delete it, and provide
+        that link to raisedadead or bjorno so they can reach out to the Discord
+        team for support.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Handling Illegal Content</h1>
+      <p>
+        A user has sent a photo containing pornographic content of a child. How
+        should you handle this?
+      </p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Suspend the user and delete the message.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Suspend the user and delete the message, saving a screenshot in the
+        log channel.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Ban the user and delete the message.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Ban the user and delete the message, saving a screenshot in the log
+        channel.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="./file-uploads.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>File Uploads</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: C</h1>
+      <p>
+        Even though you are a moderator, your safety is still important! To
+        ensure the safety of the community as a whole, we do not allow the
+        direct uploading of code files. We cannot be sure that a file is safe
+        without downloading it, and the risk is not worth it. The safest option
+        is to disallow file uploads entirely.
+      </p>
+      <p>
+        Generally, a user uploading a file does not have malicious intentions
+        and is not trying to violate a rule - so a friendly public reminder is
+        often sufficient. As a note, a file named "message.txt" is often an
+        automatic file conversion done by Discord - any message over the 2000
+        character limit gets converted. Keep this in mind with handling these
+        situations.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Handling File Uploads</h1>
+      <p>
+        A user is requesting help with their code. Here is how the conversation
+        plays out:
+      </p>
+      <textarea rows="3">
+        User: Hey, I'm having trouble with this event listener.
+        You: I can probably help with that. Can you share your code?
+        User: Sure thing!</textarea
+      >
+      <p>
+        The user then uploads an index.js file directly to the chat. What should
+        you do?
+      </p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Download the file to confirm the code is safe. Delete it if not.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Download the file and help the user debug the issue.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Delete the file, then send a message to the channel reminding
+        everyone not to upload files but use CodePen or GitHub Gists.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Delete the file, then send a private message to the user reminding
+        them not to upload files but use CodePen or GitHub Gists.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="./private-information.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
