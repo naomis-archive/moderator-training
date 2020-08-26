@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Illegal Topics</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: A</h1>
+      <p>
+        The user's intent was neither malicious nor an intentional violation of
+        the code of conduct, so a friendly reminder to everyone is sufficient.
+        However, the message should be left alone as it does not contain
+        inappropriate content or spam links. Leaving the message present serves
+        as a historical record, and messages should only be deleted under
+        specific circumstances.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Handling an Illegal Conversation Topic</h1>
+      <p>
+        It is another day filled with conversations between regular users. Then
+        the following conversation occurs:
+      </p>
+      <textarea rows="5">
+        User 1: Hey I have a question not related to the freeCodeCamp stuff.
+        You: What's up?
+        User 1: Well is anyone familiar with Python?
+        User 2: I am!
+        User 1: I'm working on a key generator to crack this game. Can you help?</textarea
+      >
+      What should be your next step?
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Send a message in the channel informing the users we do not endorse
+        or discuss illegal activities like piracy.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Send a message in the channel informing the users we do not endorse
+        or discuss illegal activities like piracy, and delete the message.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Suspend the user for discussing illegal activities.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Suspend the user for discussing illegal activities, and delete the
+        message.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="link-to-next">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
