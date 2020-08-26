@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Question Name</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is:</h1>
+      <p>Description</p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Question Title</h1>
+      <p>Question Description</p>
+      <p class="answer" id="a" onclick="highlight('a')">A: Text</p>
+      <p class="answer" id="b" onclick="highlight('b')">B: Text</p>
+      <p class="answer" id="c" onclick="highlight('c')">C: Text</p>
+      <p class="answer" id="d" onclick="highlight('d')">D: Text</p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="link-to-next">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
