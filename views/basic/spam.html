@@ -13,52 +13,43 @@
     />
     <link rel="stylesheet" type="text/css" href="../../public/question.css" />
     <script src="../../src/question.js"></script>
-    <title>Profanity</title>
+    <title>Question Name</title>
   </head>
   <body>
     <div id="answer-modal">
-      <h1>The answer is: A</h1>
+      <h1>The answer is: D</h1>
       <p>
-        In this case, because the profanity was neither excessive nor directed
-        at another user (as an insult, for example), disciplinary action is not
-        necessary. Instead, a simple friendly reminder to follow the rules is
-        sufficient.
+        There is a bit of a judgement call here, as spam-bots can be treated
+        with the heaviest of ban hammers. However, we do not want to overreact
+        to an actual user making an honest mistake, so when in doubt a
+        suspension will suffice.
       </p>
       <p>
-        While it would also be correct to DM the user (option C), this can feel
-        more heavy handed, especially with newer users. Because of the personal
-        nature of a DM, the user may feel that they are being watched directly.
-        Remember that we are not here to "police" the community, and we want to
-        remain friendly and approachable. This is why it is important to be
-        gentle when possible, but firm when necessary.
+        Remember that spam is considered to be any off-topic link, or links to
+        social media or blog posts. In general, links to GitHub and to personal
+        projects are acceptable.
       </p>
       <button type="submit" onclick="hideAnswer()">Close</button>
     </div>
     <div id="content">
-      <h1>Dealing with Profanity</h1>
+      <h1>Handling Spam</h1>
       <p>
-        You are hanging out in the general chat channel, interacting with some
-        users. Things are going quite well, and everyone is having a good time.
-        Then, this conversation occurs.
+        A new user has joined the server, and after introducing themselves they
+        post a link to their twitter account. How should you address this?
       </p>
-      <textarea readonly rows="5">
-        User 1: Hey, can someone help me with my MongoDB connection?
-        User 2: Sure, I can give it a shot!
-        You: I can help as well.
-        User 1: Well I tried adding the URI to my code, but the damn thing still will not connect!
-      </textarea>
-      <p>How do you respond to the user's use of profanity?</p>
       <p class="answer" id="a" onclick="highlight('a')">
-        A: Reply in the channel, asking everyone to remember that we have
-        members under the age of 18 and should keep our language appropriate.
+        A: Welcome the user to the server, check out their Twitter account, and
+        maybe follow them.
       </p>
       <p class="answer" id="b" onclick="highlight('b')">
-        B: Suspend the user, citing profanity as the reason.
+        B: Silently remove the message containing the link.
       </p>
       <p class="answer" id="c" onclick="highlight('c')">
-        C: Send the user a DM asking them to refrain from using profanity.
+        C: Ban the user for spam.
       </p>
-      <p class="answer" id="d" onclick="highlight('d')">D: Ban the user.</p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Suspend the user for spam.
+      </p>
       <button onclick="showAnswer()">Check your answer!</button>
     </div>
     <hr />

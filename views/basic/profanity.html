@@ -13,28 +13,59 @@
     />
     <link rel="stylesheet" type="text/css" href="../../public/question.css" />
     <script src="../../src/question.js"></script>
-    <title>Question Name</title>
+    <title>Profanity</title>
   </head>
   <body>
     <div id="answer-modal">
-      <h1>The answer is:</h1>
-      <p>Description</p>
+      <h1>The answer is: A</h1>
+      <p>
+        In this case, because the profanity was neither excessive nor directed
+        at another user (as an insult, for example), disciplinary action is not
+        necessary. Instead, a simple friendly reminder to follow the rules is
+        sufficient.
+      </p>
+      <p>
+        While it would also be correct to DM the user (option C), this can feel
+        more heavy handed, especially with newer users. Because of the personal
+        nature of a DM, the user may feel that they are being watched directly.
+        Remember that we are not here to "police" the community, and we want to
+        remain friendly and approachable. This is why it is important to be
+        gentle when possible, but firm when necessary.
+      </p>
       <button type="submit" onclick="hideAnswer()">Close</button>
     </div>
     <div id="content">
-      <h1>Question Title</h1>
-      <p>Question Description</p>
-      <p class="answer" id="a" onclick="highlight('a')">A: Text</p>
-      <p class="answer" id="b" onclick="highlight('b')">B: Text</p>
-      <p class="answer" id="c" onclick="highlight('c')">C: Text</p>
-      <p class="answer" id="d" onclick="highlight('d')">D: Text</p>
+      <h1>Dealing with Profanity</h1>
+      <p>
+        You are hanging out in the general chat channel, interacting with some
+        users. Things are going quite well, and everyone is having a good time.
+        Then, this conversation occurs.
+      </p>
+      <textarea readonly rows="5">
+        User 1: Hey, can someone help me with my MongoDB connection?
+        User 2: Sure, I can give it a shot!
+        You: I can help as well.
+        User 1: Well I tried adding the URI to my code, but the damn thing still will not connect!
+      </textarea>
+      <p>How do you respond to the user's use of profanity?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Reply in the channel, asking everyone to remember that we have
+        members under the age of 18 and should keep our language appropriate.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Suspend the user, citing profanity as the reason.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Send the user a DM asking them to refrain from using profanity.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">D: Ban the user.</p>
       <button onclick="showAnswer()">Check your answer!</button>
     </div>
     <hr />
     <div id="footer">
       <p>
         <a href="../../index.html">Back to Home</a> |
-        <a href="link-to-next">Next Challenge</a>
+        <a href="./inappropriate.html">Next Challenge</a>
       </p>
     </div>
   </body>
