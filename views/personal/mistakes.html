@@ -17,41 +17,68 @@
   </head>
   <body onload="formatChat()">
     <div id="answer-modal">
-      <h1>The answer is: D</h1>
+      <h1>The answer is: E</h1>
       <p>
-        We are all human, and we all make mistakes. However, our moderators
-        should be able to own their mistakes and handle such situations with
-        dignity and grace. If you make an error that negatively impacts a user,
-        it is <em>very</em> important that you correct the error immediately.
-        You should also apologise directly to the user, let them know that they
-        have done nothing wrong and are not in any trouble, and ensure that
-        there is no record to suggest the user was disciplined when they were
-        not.
+        We are all human, and we all make mistakes. Especially when emotions get
+        the better of us. However, our moderators should be able to own their
+        mistakes and handle such situations with dignity and grace. If you make
+        an error that negatively impacts a user, it is very important that you
+        correct the error as soon as possible.
+      </p>
+      <p>
+        However, we do not want the user to go on a rampage publicly about
+        what happened before we've had a chance to talk with them. To prevent
+        escalating the situation even further, it is best to have another
+        moderator present to mediate the situation. Even if you just want to
+        apologise for what happened, the user might still be angry and lash out
+        at you again. This is also why you absolutely want to avoid talking
+        privately with the user. It prevents "He said / She said" situations
+        where no one really knows what actually happened as they weren't present
+        during the conversation.
+      </p>
+      <p>
+        Lastly it is very important that you do apologise directly to the user
+        and let them know that they didn't do anything that warranted a ban.
+        Ensure them that there will be no records against the user where
+        disciplinary action was taken against them.
       </p>
       <button type="submit" onclick="hideAnswer()">Close</button>
     </div>
     <div id="content">
       <h1>Owning your Mistakes</h1>
       <p>
-        A user has dropped a spam link in the server, and you have decided to
-        suspend them. One of the features of the chatroom bot is the ability to
-        handle the suspension workflow, so you leverage that feature to suspend
-        the user. Unfortunately, you mistype the username and accidentally
-        suspend a different user, who was completely innocent.
+        A user got in a heated conversation with another user. You decide to
+        step in as to calm things down. One of the users takes on an offensive
+        position and directs their frustrations towards you instead. It becomes
+        clear to you that you cannot solve the situation at this moment and
+        decide to suspend the user as to stop further disruptions towards the
+        public chatroom. This angers the user further and they decide to
+        continue their rant in the suspension channel. Although they technically
+        aren't doing anything against our Code of Conduct, they manage to get
+        under your skin and you decide to ban the user. How do you rectify the
+        situation after cooling down?
       </p>
       <p>What is the best way to rectify this situation?</p>
       <p class="answer" id="a" onclick="highlight('a')">
-        A: Ban them so they cannot tell anyone you made an error.
+        A: Leave the ban in place. They got what they deserved.
       </p>
       <p class="answer" id="b" onclick="highlight('b')">
-        B: Leave the suspension in place. They probably won't notice anyway.
+        B: Leave the ban in place as you feel the user was disrespectful towards
+        you and probably will do it again if given the chance.
       </p>
       <p class="answer" id="c" onclick="highlight('c')">
-        C: Immediately remove the suspension and say nothing about your mistake.
+        C: Remove the ban and contact the user to clear the air between the both
+        of you. Apologise for banning the user.
       </p>
       <p class="answer" id="d" onclick="highlight('d')">
-        D: Immediately remove the suspension, then message the user to apologise
-        for the error.
+        D: Remove the ban and explain what happened in the Moderator channel.
+        Ask another moderator to contact the user as you feel that doing this
+        yourself might result in further conflict.
+      </p>
+      <p class="answer" id="e" onclick="highlight('e')">
+        E: Remove the ban but suspend the user straight away. Explain what
+        happened in the Moderator channel and ask another moderator to help
+        clear the air in the suspension channel.
       </p>
       <button onclick="showAnswer()">Check your answer!</button>
     </div>
