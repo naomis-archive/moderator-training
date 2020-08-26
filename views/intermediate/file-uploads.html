@@ -15,7 +15,7 @@
     <script src="../../src/question.js"></script>
     <title>File Uploads</title>
   </head>
-  <body>
+  <body onload="formatChat()">
     <div id="answer-modal">
       <h1>The answer is: C</h1>
       <p>
@@ -41,11 +41,15 @@
         A user is requesting help with their code. Here is how the conversation
         plays out:
       </p>
-      <textarea rows="3">
-        User: Hey, I'm having trouble with this event listener.
-        You: I can probably help with that. Can you share your code?
-        User: Sure thing!</textarea
-      >
+      <div class="chatbox">
+        <pre>
+      
+          User: Hey, I'm having trouble with this event listener.
+          You: I can probably help with that. Can you share your code?
+          User: Sure thing!
+          </pre
+        >
+      </div>
       <p>
         The user then uploads an index.js file directly to the chat. What should
         you do?

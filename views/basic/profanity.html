@@ -15,7 +15,7 @@
     <script src="../../src/question.js"></script>
     <title>Profanity</title>
   </head>
-  <body>
+  <body onload="formatChat()">
     <div id="answer-modal">
       <h1>The answer is: A</h1>
       <p>
@@ -41,12 +41,16 @@
         users. Things are going quite well, and everyone is having a good time.
         Then, this conversation occurs.
       </p>
-      <textarea readonly rows="4">
-        User 1: Hey, can someone help me with my MongoDB connection?
-        User 2: Sure, I can give it a shot!
-        You: I can help as well.
-        User 1: Well I tried adding the URI to my code, but the damn thing still will not connect!</textarea
-      >
+      <div class="chatbox">
+        <pre>
+      
+          User 1: Hey, can someone help me with my MongoDB connection?
+          User 2: Sure, I can give it a shot!
+          You: I can help as well.
+          User 1: Well I tried adding the URI to my code, but the damn thing still will not connect!
+          </pre
+        >
+      </div>
       <p>How do you respond to the user's use of profanity?</p>
       <p class="answer" id="a" onclick="highlight('a')">
         A: Reply in the channel, asking everyone to remember that we have

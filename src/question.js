@@ -23,7 +23,7 @@ const formatChat = () => {
     console.log(chats[i].innerHTML)
     chats[i].innerHTML = chats[i].innerHTML.replace(
       /^[\s]*(.*): (.*)/gm,
-      "<img class='pfp' src='../public/img/disc.jpg'><span class='username'>$1</span><span class='chat-content'>$2</span>"
+      "<img class='pfp' src='../../public/img/disc.jpg'><span class='username'>$1</span><span class='chat-content'>$2</span>"
     );
     console.log(chats[i].innerHTML)
   }
