@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Mental Illness</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: B</h1>
+      <p>
+        This is a very tricky situation, and it can be hard to resist the desire
+        to help someone who is struggling. This is especially true if you've
+        become close to them in any way.
+      </p>
+      <p>
+        However, it is important to remember that being a moderator means you
+        represent the freeCodeCamp organisation. As such, great care needs to be
+        taken in situations such as this. Our moderators are not qualified, or
+        expected to be qualified, to handle such situations. It is best to
+        suggest the user seek qualified help, while remaining kind and
+        professional.
+      </p>
+      <p>
+        Were you to get involved, and the situation took a turn for the worse,
+        not only could you be liable but freeCodeCamp could be found responsible
+        as well. This is why it is important to leave such situations to people
+        who are qualified - if you have resources to help, it is good to share
+        those with the user. But avoid becoming personally involved.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Handling Mental Illness</h1>
+      <p>
+        One of our users sends you a private message and the following exchange
+        occurs:
+      </p>
+      <textarea rows="3">
+          User: Hey, can I talk to you about something?
+          You: Sure, what's up?
+          User: Well, I've been dealing with a lot lately and I'm feeling some suicidal thoughts...</textarea
+      >
+      <p>What should your response be?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Block the user from sending you DMs.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Express your concern for the user's well being, but explain that you
+        are not qualified to help with this and suggest they seek professional
+        assistance.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Express your concern for the user's well being, and offer to help in
+        any way you can.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Express your concern for the user's well being, and share a related
+        experience to bond with them.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="../../congrats.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
