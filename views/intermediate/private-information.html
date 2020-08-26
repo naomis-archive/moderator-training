@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Private Information</title>
+  </head>
+  <body>
+    <div id="answer-modal">
+      <h1>The answer is: A</h1>
+      <p>
+        This is definitely not a situation that warrants a suspension. However,
+        we do want to look out for our users. Removing the image and politely
+        explaining to everyone that "sharing private information in a room with
+        7000 strangers is a bad idea" would be the best and friendliest approach
+        here.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Handling Private Information</h1>
+      <p>
+        There will be times when a user wants help with something like a resume
+        review. Sometimes the user forgets to remove the private information
+        before sharing a screenshot of their resume. How should you respond when
+        this happens?
+      </p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Remove the file, send a message to the channel reminding everyone of
+        the importance of privacy protection.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Remove the file, send a message to the user to remind them of the
+        importance of privacy protection.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Suspend the user for uploading a file.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Provide the resume review the user asked for.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="../personal/play-a-game.html">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
