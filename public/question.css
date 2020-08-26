@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background-color: #0a0a23;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Roboto Mono";
+}
+
+p,
+summary {
+  font-family: "Lato";
+  font-size: 18px;
+}
+
+button {
+  width: 90vw;
+  max-width: 1000px;
+  height: 50px;
+  border: 2px solid white;
+  background-color: #3b3b4f;
+  color: #d0d0d5;
+  font-family: "Lato";
+  font-size: 18pt;
+}
+
+#answer-modal {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 90vw;
+  max-width: 1000px;
+  border: 2px solid white;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #3b3b4f;
+}
+
+#content {
+  width: 90vw;
+  max-width: 1000px;
+  margin: auto;
+  text-align: justify;
+}
+
+.answer {
+  width: 90vw;
+  max-width: 1000px;
+  height: 50px;
+  border: 2px solid white;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.highlighted {
+  background-color: #3b3b4f !important;
+  color: #d0d0d5 !important;
+}
+
+.shown {
+  display: block !important;
+}
