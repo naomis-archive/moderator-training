@@ -8,9 +8,11 @@ const highlight = (id) => {
 };
 
 const showAnswer = () => {
-    document.getElementById("answer-modal").classList.add("shown")
-}
+  const validate = document.getElementsByClassName("highlighted");
+  if (!validate.length) return alert("Please select an answer!");
+  document.getElementById("answer-modal").classList.add("shown");
+};
 
 const hideAnswer = () => {
-    document.getElementById("answer-modal").classList.remove("shown")
-}
+  document.getElementById("answer-modal").classList.remove("shown");
+};
