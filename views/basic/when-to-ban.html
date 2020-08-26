@@ -15,7 +15,7 @@
     <script src="../../src/question.js"></script>
     <title>Ban-Hammer!</title>
   </head>
-  <body>
+  <body onload="formatChat()">
     <div id="answer-modal">
       <h1>The answer is: C</h1>
       <p>
@@ -43,10 +43,14 @@
         the Code of Conduct and ask that they read and accept it. The following
         conversation results from this.
       </p>
-      <textarea readonly rows="2">
-        You: Please confirm that you have read and agree to follow the CoC.
-        User: Sod off. I don't give a damn what you have to say.</textarea
-      >
+      <div class="chatbox">
+        <pre>
+      
+          You: Please confirm that you have read and agree to follow the CoC.
+          User: Sod off. I don't give a damn what you have to say.
+          </pre
+        >
+      </div>
       <p>How should you proceed?</p>
       <p class="answer" id="a" onclick="highlight('a')">
         A: Ignore the user's comment and leave them suspended.

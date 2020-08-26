@@ -16,3 +16,15 @@ const showAnswer = () => {
 const hideAnswer = () => {
   document.getElementById("answer-modal").classList.remove("shown");
 };
+
+const formatChat = () => {
+  const chats = document.getElementsByClassName("chatbox");
+  for (let i = 0; i < chats.length; i++) {
+    console.log(chats[i].innerHTML)
+    chats[i].innerHTML = chats[i].innerHTML.replace(
+      /^[\s]*(.*): (.*)/gm,
+      "<img class='pfp' src='../../public/img/disc.jpg'><span class='username'>$1</span><span class='chat-content'>$2</span>"
+    );
+    console.log(chats[i].innerHTML)
+  }
+};

@@ -15,7 +15,7 @@
     <script src="../../src/question.js"></script>
     <title>Mental Illness</title>
   </head>
-  <body>
+  <body onload="formatChat()">
     <div id="answer-modal">
       <h1>The answer is: B</h1>
       <p>
@@ -46,11 +46,15 @@
         One of our users sends you a private message and the following exchange
         occurs:
       </p>
-      <textarea rows="3">
+      <div class="chatbox">
+        <pre>
+      
           User: Hey, can I talk to you about something?
           You: Sure, what's up?
-          User: Well, I've been dealing with a lot lately and I'm feeling some suicidal thoughts...</textarea
-      >
+          User: Well, I've been dealing with a lot lately and I'm feeling some suicidal thoughts...
+          </pre
+        >
+      </div>
       <p>What should your response be?</p>
       <p class="answer" id="a" onclick="highlight('a')">
         A: Block the user from sending you DMs.

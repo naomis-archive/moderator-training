@@ -15,7 +15,7 @@
     <script src="../../src/question.js"></script>
     <title>Play a Game!</title>
   </head>
-  <body>
+  <body onload="formatChat()">
     <div id="answer-modal">
       <h1>The answer is: C or D</h1>
       <p>
@@ -43,13 +43,17 @@
         always helpful, and careful to follow the Code of Conduct. One day, they
         reach out to you via private message and this conversation occurs.
       </p>
-      <textarea readonly rows="5">
-User: Hey!
-You: Hey, how are you today?
-User: Good! Hey listen, I got this game recently, do you know it?
-You: Yeah! I actually play that a lot! It's an amazing game!
-User: Cool! Would you like to play together sometime? </textarea
-      >
+      <div class="chatbox">
+        <pre>
+      
+          User: Hey!
+          You: Hey, how are you today?
+          User: Good! Hey listen, I got this game recently, do you know it?
+          You: Yeah! I actually play that a lot! It's an amazing game!
+          User: Cool! Would you like to play together sometime?
+          </pre
+        >
+      </div>
       <p>How will you respond to this user?</p>
       <p class="answer" id="a" onclick="highlight('a')">
         A: "Sure! Sounds fun!"

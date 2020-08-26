@@ -15,7 +15,7 @@
     <script src="../../src/question.js"></script>
     <title>Illegal Topics</title>
   </head>
-  <body>
+  <body onload="formatChat()">
     <div id="answer-modal">
       <h1>The answer is: A</h1>
       <p>
@@ -34,14 +34,18 @@
         It is another day filled with conversations between regular users. Then
         the following conversation occurs:
       </p>
-      <textarea rows="5">
-        User 1: Hey I have a question not related to the freeCodeCamp stuff.
-        You: What's up?
-        User 1: Well is anyone familiar with Python?
-        User 2: I am!
-        User 1: I'm working on a key generator to crack this game. Can you help?</textarea
-      >
-      What should be your next step?
+      <div class="chatbox">
+        <pre>
+      
+          User 1: Hey I have a question not related to the freeCodeCamp stuff.
+          You: What's up?
+          User 1: Well is anyone familiar with Python?
+          User 2: I am!
+          User 1: I'm working on a key generator to crack this game. Can you help?
+          </pre
+        >
+      </div>
+      <p>What should be your next step?</p>
       <p class="answer" id="a" onclick="highlight('a')">
         A: Send a message in the channel informing the users we do not endorse
         or discuss illegal activities like piracy.
