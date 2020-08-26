@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link rel="stylesheet" type="text/css" href="../../public/question.css" />
+    <script src="../../src/question.js"></script>
+    <title>Romantic Interest</title>
+  </head>
+  <body onload="formatChat()">
+    <div id="answer-modal">
+      <h1>The answer is: D</h1>
+      <p>
+        As a moderator it is important to avoid situations where you could be in
+        a conflict of interest. Engaging in a romantic relationship with one of
+        our users could put you in the position where you have to decide between
+        pleasing your partner and enforcing the rules, and that is not a
+        pleasant situation to be in.
+      </p>
+      <p>
+        Additionally, it is good to let your fellow moderators know when
+        something like this occurs, so we can all keep an eye on the situation
+        and ensure things are handled appropriately. This will also allow us to
+        look out for you in the event the user becomes more persistent.
+      </p>
+      <button type="submit" onclick="hideAnswer()">Close</button>
+    </div>
+    <div id="content">
+      <h1>Handling A User's Romantic Interest</h1>
+      <p>
+        For the sake of this scenario, assume you do not have a significant
+        other or romantic partner. A user has been interacting with you in the
+        server with increasing frequency, and seems to be finding excuses to
+        talk to you or agree with you. This culminates in the following private
+        message they send you.
+      </p>
+      <div class="chatbox">
+        <pre>
+      
+          User: Hello! I have something I want to tell you, but I'm a little scared.
+          You: No need to be scared. What's up?
+          User: I... I kind of have feelings for you.
+          </pre
+        >
+      </div>
+      <p>What should you do?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Tell the user you feel the same way. Being single is lonely
+        sometimes!
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Apologise to the user and explain that you are not interested.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Apologise to the user and inform them you cannot engage in personal
+        relationships with community members as a moderator.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Apologise to the user and inform them you cannot engage in personal
+        relationships with community members as a moderator, then let your
+        fellow moderators know about the situation.
+      </p>
+      <button onclick="showAnswer()">Check your answer!</button>
+    </div>
+    <hr />
+    <div id="footer">
+      <p>
+        <a href="../../index.html">Back to Home</a> |
+        <a href="link-to-next">Next Challenge</a>
+      </p>
+    </div>
+  </body>
+</html>
