@@ -13,21 +13,61 @@
     />
     <link rel="stylesheet" type="text/css" href="../../public/question.css" />
     <script src="../../src/question.js"></script>
-    <title>Question Name</title>
+    <title>Play a Game!</title>
   </head>
   <body>
     <div id="answer-modal">
-      <h1>The answer is:</h1>
-      <p>Description</p>
+      <h1>The answer is: C or D</h1>
+      <p>
+        While freeCodeCamp and the moderator team cannot (and will not) dictate
+        what you do in your personal life, it is generally a bad idea to form
+        deep personal relationships with our users.
+      </p>
+      <p>
+        In this case, playing the game with this user may result in them
+        believing they can push the rules, because they are friends with a
+        moderator. It could put you in a tough place where you have to enact a
+        punishment (suspension or ban) against someone you consider a friend.
+      </p>
+      <p>
+        To prevent ending up in a situation such as this, it is best to inform
+        the user that you do not wish to develop personal connections with the
+        users. Whether you choose to go more in depth is up to you.
+      </p>
       <button type="submit" onclick="hideAnswer()">Close</button>
     </div>
     <div id="content">
-      <h1>Question Title</h1>
-      <p>Question Description</p>
-      <p class="answer" id="a" onclick="highlight('a')">A: Text</p>
-      <p class="answer" id="b" onclick="highlight('b')">B: Text</p>
-      <p class="answer" id="c" onclick="highlight('c')">C: Text</p>
-      <p class="answer" id="d" onclick="highlight('d')">D: Text</p>
+      <h1>Want to play a game?</h1>
+      <p>
+        There is a regular user on the freeCodeCamp Discord. They are friendly,
+        always helpful, and careful to follow the Code of Conduct. One day, they
+        reach out to you via private message and this conversation occurs.
+      </p>
+      <textarea readonly rows="5">
+User: Hey!
+You: Hey, how are you today?
+User: Good! Hey listen, I got this game recently, do you know it?
+You: Yeah! I actually play that a lot! It's an amazing game!
+User: Cool! Would you like to play together sometime? </textarea
+      >
+      <p>How will you respond to this user?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: "Sure! Sounds fun!"
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: "I'm sorry but I don't have a lot of time these days. Perhaps some
+        other time?"
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: "Sorry but I would rather not have personal relationships with our
+        members."
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: "Sorry but I would rather not have personal relationships with our
+        members because I don't want to end up in situations where I have to
+        choose between friendship and my job as a moderator.
+      </p>
+      <p class="answer" id="e" onclick="highlight('e')">E: "No thanks!"</p>
       <button onclick="showAnswer()">Check your answer!</button>
     </div>
     <hr />

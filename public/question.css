@@ -31,6 +31,16 @@ button {
   font-size: 18pt;
 }
 
+textarea {
+  background-color: #3b3b4f;
+  color: #d0d0d5;
+  width: 90vw;
+  max-width: 1000px;
+  resize: none;
+  font-size: 16pt;
+  font-family: "Lato";
+}
+
 #answer-modal {
   position: absolute;
   z-index: 1;
