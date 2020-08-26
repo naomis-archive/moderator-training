@@ -14,6 +14,12 @@ summary {
   font-size: 18px;
 }
 
+a {
+  font-family: "Lato";
+  font-size: 18px;
+  color: #ffffff;
+}
+
 button {
   width: 90vw;
   max-width: 1000px;
@@ -42,6 +48,13 @@ button {
   max-width: 1000px;
   margin: auto;
   text-align: justify;
+}
+
+#footer {
+  width: 90vw;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
 .answer {
