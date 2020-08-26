@@ -13,28 +13,62 @@
     />
     <link rel="stylesheet" type="text/css" href="../../public/question.css" />
     <script src="../../src/question.js"></script>
-    <title>Question Name</title>
+    <title>Inappropriate Content</title>
   </head>
   <body>
     <div id="answer-modal">
-      <h1>The answer is:</h1>
-      <p>Description</p>
+      <h1>The answer is: B</h1>
+      <p>
+        While this conversation was fairly civil, certain topics such as
+        politics, religion, and such can escalate very quickly. The situation
+        can be monitored and allowed to unfold, but in general it is safest to
+        curb the discussion before things have an opportunity to get out of
+        hand.
+      </p>
+      <p>
+        Remember that our primary purpose as a community is to assist and
+        support users with completing the freeCodeCamp curriculum. Other
+        conversations are permissible, so long as the content is appropriate and
+        the discussion is civil. But we want to prevent heated arguments, and
+        controversial topics are best avoided entirely.
+      </p>
       <button type="submit" onclick="hideAnswer()">Close</button>
     </div>
     <div id="content">
-      <h1>Question Title</h1>
-      <p>Question Description</p>
-      <p class="answer" id="a" onclick="highlight('a')">A: Text</p>
-      <p class="answer" id="b" onclick="highlight('b')">B: Text</p>
-      <p class="answer" id="c" onclick="highlight('c')">C: Text</p>
-      <p class="answer" id="d" onclick="highlight('d')">D: Text</p>
+      <h1>Handling Inappropriate Topics of Conversation</h1>
+      <p>
+        It is another day, and you are having some great conversations with new
+        users about the Responsive Web Design certification. Everything is going
+        well, until this conversation occurs:
+      </p>
+      <textarea>
+        User 1: Man, I wish this pandemic was over already.
+        User 2: Right? Too bad we have George for president. That idiot has no idea what he's doing.
+        User 1: He's so bloody stupid.
+        User 3: Wait a minute, you're wrong! George is great!
+      </textarea>
+      <p>How should you proceed?</p>
+      <p class="answer" id="a" onclick="highlight('a')">
+        A: Suspend User 1 for starting the conversation.
+      </p>
+      <p class="answer" id="b" onclick="highlight('b')">
+        B: Interject and ask everyone to keep the discussions away from
+        controversial topics.
+      </p>
+      <p class="answer" id="c" onclick="highlight('c')">
+        C: Suspend all 3 users.
+      </p>
+      <p class="answer" id="d" onclick="highlight('d')">
+        D: Express your own opinion on George's policy to strengthen your bond
+        with the community members.
+      </p>
       <button onclick="showAnswer()">Check your answer!</button>
     </div>
     <hr />
     <div id="footer">
       <p>
         <a href="../../index.html">Back to Home</a> |
-        <a href="link-to-next">Next Challenge</a>
+        <a href="./when-to-ban.html">Next Challenge</a>
       </p>
     </div>
   </body>
