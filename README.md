@@ -4,9 +4,7 @@ This app serves as a proof of concept for a training module for [freeCodeCamp](h
 
 ## Live Version
 
-This page is not yet deployed.
-
-<!--This page is currently deployed. [View the live website.]()-->
+This page is currently deployed. [View the live website.](https://www.nhcarrigan.com/moderator-training)
 
 ## Contributing Content
 
