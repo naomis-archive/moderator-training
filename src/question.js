@@ -14,7 +14,7 @@ const showAnswer = () => {
   modal.classList.add("shown");
   const marginValue = Math.max(
     0,
-    (document.body.clientHeight - modal.style.height) / 2
+    (document.body.clientHeight - modal.style.height / 2) / 2
   );
   modal.setAttribute("style", `margin-top: ${marginValue}px`);
 };
