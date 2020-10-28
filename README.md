@@ -20,9 +20,19 @@ To propose a new scenario (or module) follow these steps:
 5. Push your changes to your new branch.
 6. Open a PR to merge your changes with the `master` branch of this repository!
 
+Please review our [contributing guidelines](CONTRIBUTING.md) first.
+
 ## Feedback and Bugs
 
 If you have feedback or a bug report, you can create a GitHub issue or [contact me directly](https://contact.nhcarrigan.com).
+
+## Feedback and Bugs
+
+If you have feedback or a bug report, please feel free to open a GitHub issue!
+
+## Code of Conduct
+
+Before interacting with our community, please read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Contributors ✨
 
