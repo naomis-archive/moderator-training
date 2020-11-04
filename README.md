@@ -14,11 +14,11 @@ This page is currently deployed. [View the live website.](https://www.nhcarrigan
 To propose a new scenario (or module) follow these steps:
 
 1. Fork the repository to your GitHub account.
-2. Create a branch (it is always important to keep your master branch clean!)
+2. Create a branch (it is always important to keep your main branch clean!)
 3. Copy the `question.html` file into the appropriate category folder under `views` and rename it to your scenario topic. This template is already set up to link to the `CSS` and `JS` files, so all you need to do is write the content!
 4. Add a link to the new file on the `index.html` under the appropriate category.
 5. Push your changes to your new branch.
-6. Open a PR to merge your changes with the `master` branch of this repository!
+6. Open a PR to merge your changes with the `main` branch of this repository!
 
 Please review our [contributing guidelines](CONTRIBUTING.md) first.
 
