@@ -24,15 +24,15 @@ Please review our [contributing guidelines](CONTRIBUTING.md) first.
 
 ## Feedback and Bugs
 
-If you have feedback or a bug report, you can create a GitHub issue or [contact me directly](https://contact.nhcarrigan.com).
-
-## Feedback and Bugs
-
 If you have feedback or a bug report, please feel free to open a GitHub issue!
 
 ## Code of Conduct
 
 Before interacting with our community, please read our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Questions
+
+If you have questions regarding contributing, using the project, or any related topic, you can reach us at our [Discord Server](https://discord.gg/yMBWgETTJu) where we would be happy to help!
 
 ## Contributors ✨
 
